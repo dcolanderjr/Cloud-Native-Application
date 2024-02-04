@@ -1,3 +1,5 @@
+# Below is the code to create the python/flask app. Use pip install psutil if you do not have it currently on your system.
+
 # import psutility, Flask
 import psutil
 from flask import Flask, render_template
