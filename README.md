@@ -25,9 +25,13 @@ The app.py file should be running now. In the terminal window it will have the p
 
 The next items you should reference are in the templates folder. Create a folder named templates, and include the HTML file in the folder. The HTML does all the leg work to make our application a little bit more appealing. (Long story short, our text app was kind of bland, so now its a new app, with fancy gauges!) Restart the application in the terminal by running "python3 app.py", you should now see the gauges.
 
-Next, we will create the docker file that will be used to host this in a container. The file contents contain (see what I did there) all the dependencies needed to run the application. Similar to what we did with the requirements.txt file and imported into the app.py file, we will import this into the docker container. Good thing about containers if they can run all of the dependencies within itself instead of having to run on the underlying hardware.
+Next, we will create the docker file that will be used to host this in a container. The file contents contain (see what I did there) all the dependencies needed to run the application. Similar to what we did with the requirements.txt file and imported into the app.py file, we will import this into the docker container. Good thing about containers is they can run all of the dependencies within itself instead of having to rely on apps on the underlying hardware. Just a quick run down of what the docker file does: Declares the python runtime, creates a folder for the application to run in, and pulls in the dependencies from the requirements.txt file. Sets the environment variables, installs any python updates, and exposes the localhost:5000 port. The dependencies download also installs boto3 (aws python) as well as Kubernetes. To get the container to run, use the command "docker build -t my-flask-app ." (ensure the space after the flask app) Afterwards, run "docker images" to verify your image completed. Next, run "docker run - p" to determine the port and IMAGEID (should be 5000). Next run the command, "docker run -p 5000:5000 IMAGEID" (insert your image ID) Your docker container should be running, verify again by going to localhost:5000 in your browser, congrats its on Docker now!
 
 ![docker](https://github.com/dcolanderjr/Cloud-Native-Application/assets/131455625/c74c6d04-31d2-4b4e-ae9e-95c874a93392)
+
+Now, we need to push our application to ECR. I used ECR because we are going to deploy the Kubernetes cluster on EKS, however, should be similiar for Azure, just push t
+
+
 
 
 
