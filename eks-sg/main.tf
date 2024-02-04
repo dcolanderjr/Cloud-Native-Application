@@ -1,3 +1,5 @@
+# Code creates a generic security group with port 5000 open so it can be used on local machine, as well as accessed from internet.
+
 provider "aws" {
   region = "us-east-1"
 }
