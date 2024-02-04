@@ -1,3 +1,5 @@
+# Requirements file will download all dependencies for you, so you do not have to do them manually. =D
+
 Flask==2.2.3
 MarkupSafe==2.1.2
 Werkzeug==2.2.3
