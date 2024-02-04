@@ -23,7 +23,7 @@ deployment = client.V1Deployment(
                 containers=[
                     client.V1Container(
                         name="my-flask-container",
-                        image="741890680366.dkr.ecr.us-east-1.amazonaws.com/my-cloud-native-repo:latest",
+                        image="accountIDhere.dkr.ecr.us-east-1.amazonaws.com/my-cloud-native-repo:latest",
                         ports=[client.V1ContainerPort(container_port=5000)]
                     )
                 ]
