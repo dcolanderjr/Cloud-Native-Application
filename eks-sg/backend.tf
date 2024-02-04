@@ -1,4 +1,4 @@
-# Store tfstate file in S3 BUcket
+# Store tfstate file in S3 BUcket within an /eks path.
 
 terraform {
     backend "s3" {
