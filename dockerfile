@@ -1,3 +1,5 @@
+#Create a docker image, and use the code below. This will set up the docker image for the application, which will later be deployed on Kubernetes.
+
 # Official python image as base image for dockerfile
 FROM python:3.9-slim-buster
 
