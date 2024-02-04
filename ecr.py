@@ -1,3 +1,5 @@
+# Use python to create your ECR Repo, this was performed using Terraform. Alternatively, you can do it manually through the console.
+
 import boto3
 
 ecr_client = boto3.client("ecr")
