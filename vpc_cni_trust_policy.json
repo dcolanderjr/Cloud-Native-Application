@@ -1,3 +1,6 @@
+# Create this policy and manually add it to your EKS Node role 
+# Alternatively you can view the AWS documentation by searching VPC-CNI-TRUST-POLICY for CLI instructions to manually create and upload the role. 
+
 {
     "Version": "2012-10-17",
     "Statement": [
