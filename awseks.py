@@ -1,3 +1,5 @@
+# This is the code for the EKS cluster written in python; where it says accountIDhere is your accountID. 
+
 # import kubernetes client, and config
 from kubernetes import client, config
 
